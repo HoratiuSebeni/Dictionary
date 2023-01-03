@@ -1,8 +1,8 @@
 let dictionary = '';
 let succesfullAdd = ' was added succesfully!';
 let notAdded = ' was not added to the dictionary!';
-let allreadyExist = ' allready exist on the dictionary!';
-let notExist = ' does not exist on the dictionary!';
+let allreadyExist = ' already exist in the dictionary!';
+let notExist = ' does not exist in the dictionary!';
 
 function addThisWord() {
     let newWord = document.getElementById('newInput').value;
