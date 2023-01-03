@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Dictionary</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <br>
+        <div id="header" class="container">
+            <h1>
+                    <center>
+                        Dictionary
+                    </center>
+            </h1>
+        </div>
+        <br>
+        <br>
+        <div id="insertWord" class="container">
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <center>
+                            Add word
+                        </center>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="newSection" class="input-group mb-3">
+                        <input type="text" id="newInput" class="form-control" placeholder="New" pattern="[a-z][A-Z]">
+                        <span class="validity"></span>
+                        <button id="insertNewWord" type="button" class="btn btn-primary" onclick="addThisWord()">
+                            Submit
+                        </button>    
+                    </div>
+                    <font size="1.5">*only letters of the english alphabet</font>
+                    <br>
+                    <div id="addedNewWord" style="display: none"></div>
+                    <div id="notAddedNewWord" style="display: none"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="searchWord" class="container">
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <center>
+                            Find word
+                        </center>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="searchSection" class="input-group mb-3">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search" pattern="[a-z][A-Z]">
+                        <span class="validity"></span>
+                        <button id="searchNewWord" type="button" class="btn btn-primary" onclick="findThisWord()">
+                            Submit
+                        </button>    
+                    </div>
+                    <font size="1.5">*only letters of the english alphabet</font>
+                    <br>
+                    <div id="findedWord" style="display: none"></div>
+                    <div id="notFindedWord" style="display: none"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
